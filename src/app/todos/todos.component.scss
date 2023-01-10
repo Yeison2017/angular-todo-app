@@ -32,6 +32,10 @@
   padding: 35px 15px;
   border-bottom: 1px solid #f2f3f5;
   cursor: pointer;
+
+  &.completed {
+    color: #aaa;
+  }
 }
 
 .todo-item .check-box {
@@ -49,14 +53,10 @@
     font-size: 20px;
     margin: auto;
 
+    color: #333;
+
     opacity: 0;
     transition: opacity 0.2s;
-  }
-}
-
-.todo-item:hover .check-box {
-  i.material-icons {
-    opacity: 1;
   }
 }
 
@@ -64,5 +64,13 @@
   background: #eee;
   i.material-icons {
     opacity: 0.28;
+  }
+}
+
+.todo-item:hover .check-box {
+  background: rgb(11, 223, 170);
+
+  i.material-icons {
+    opacity: 1;
   }
 }
