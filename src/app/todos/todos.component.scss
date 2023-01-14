@@ -68,13 +68,22 @@
   }
 }
 
-.todo-item:hover .check-box {
+.todo-item.completed .check-box {
   background: rgb(11, 223, 170);
+  border-color: rgb(11, 223, 170);
 
   i.material-icons {
     opacity: 1;
   }
 }
+
+// .todo-item:hover .check-box {
+//   background: rgb(11, 223, 170);
+
+//   i.material-icons {
+//     opacity: 1;
+//   }
+// }
 
 .todo-item .todo-controls-box {
   position: absolute;

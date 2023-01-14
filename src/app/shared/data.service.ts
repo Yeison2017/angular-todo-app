@@ -5,7 +5,11 @@ import { Todo } from './todo.model';
   providedIn: 'root',
 })
 export class DataService {
-  todos: Todo[] = [];
+  todos: Todo[] = [
+    new Todo('Buy milk', false),
+    new Todo('Buy coffee', false),
+    new Todo('Buy tea', true),
+  ];
 
   constructor() {}
 
@@ -17,11 +21,11 @@ export class DataService {
     this.todos.push(todo);
   }
 
-  uodateTodo(index: number, updatedTodo: Todo) {
+  updateTodo(index: number, updatedTodo: Todo) {
     this.todos[index] = updatedTodo;
   }
 
   deleteTodo(index: number) {
-    this.todos.slice(index, 1);
+    this.todos.splice(index, 1);
   }
 }
