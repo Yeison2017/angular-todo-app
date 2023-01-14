@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 import { DataService } from '../shared/data.service';
 import { Todo } from '../shared/todo.model';
 
@@ -9,12 +11,26 @@ import { Todo } from '../shared/todo.model';
 })
 export class TodosComponent implements OnInit {
   todos: Todo[];
+  showValidationErrors: boolean;
 
   constructor(private dataService: DataService) {
     this.todos = [];
+    this.showValidationErrors = false;
   }
 
   ngOnInit(): void {
     this.todos = this.dataService.getAllTodos();
+  }
+
+  onFormSubmit(form: NgForm) {
+    const { value } = form;
+
+    if (form.invalid) return (this.showValidationErrors = true);
+    this.dataService.addTodo(new Todo(value.text));
+
+    this.showValidationErrors = false;
+    form.reset();
+
+    return false;
   }
 }
