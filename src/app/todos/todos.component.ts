@@ -33,4 +33,8 @@ export class TodosComponent implements OnInit {
 
     return false;
   }
+
+  toggleCompleted(todo: Todo) {
+    todo.completed = !todo.completed;
+  }
 }
