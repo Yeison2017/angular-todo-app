@@ -1,53 +1,31 @@
-# AngularTodoApp
+# Todo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Esta aplicación fue creada en Angular y es una página web donde puedes registrar, editar y eliminar tareas (Todo). El registro de los Todo se realiza en el localStorage, de esta manera podrás tener acceso a tus tareas incluso si no tienes conexión a internet. Además, la aplicación es responsive, lo que significa que se adapta automáticamente al tamaño de tu pantalla, ya sea en un escritorio o en un dispositivo móvil.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
-# TodoApp
-
-Aplicación web desarrollada en Angular donde se pueden registrar, editar y eliminar tareas. El registro de las tareas se realiza en el localStorage.
+En cuanto a los estilos, utiliza el framework Bulma para la estructura, Sass para los estilos personalizados y Angular Material UI para los elementos de interfaz. Esto garantiza una experiencia de usuario agradable y fácil de usar.
 
 ## Características
 
+- Creada en Angular
+- Registra, edita y elimina tareas (Todo)
+- Registro de Todo en el localStorage
 - Responsive
-- Utiliza el framework Bulma y Sass para los estilos
+- Utiliza el framework Bulma, Sass y Angular Material UI para los estilos
 
 ## Capturas de pantalla
 
-Agrega aquí las capturas de pantalla de la aplicación tanto para desktop y móvil
+Agrega aquí las captures de la aplicación tanto para desktop y móvil.
 
 ## Instalación
 
-Para correr la aplicación en tu máquina, sigue estos pasos:
+Para usar esta aplicación, necesitarás tener Node.js instalado en tu ordenador. Una vez hecho esto, sigue estos pasos:
 
-1. Descarga o clona el repositorio
-2. Ejecuta `npm install` para instalar las dependencias
-3. Ejecuta `ng serve` para iniciar un servidor de desarrollo
-4. Abre tu navegador en `http://localhost:4200/`
+1. Clona este repositorio en tu ordenador
+2. Accede a la carpeta del proyecto desde la línea de comandos
+3. Ejecuta el comando `npm install` para instalar todas las dependencias necesarias
+4. Ejecuta el comando `ng serve` para iniciar el servidor de desarrollo
+5. Accede a `http://localhost:4200/` en tu navegador para ver la aplicación en acción
 
 ## Créditos
 
-Esta aplicación fue creada a partir del tutorial de [Devstackr](https://www.youtube.com/watch?v=gvWxMQ_Zios) en Youtube, adicionalmente se le agregaron mejoras como el responsive y personalización de los colores principales de la aplicación.
+Esta aplicación fue creada a partir de un tutorial de YouTube, el canal se llama [Devstackr](https://www.youtube.com/watch?v=gvWxMQ_Zios) adicional al tutorial le agregué mejoras como el responsive y personalización de los colores principales de la aplicación.

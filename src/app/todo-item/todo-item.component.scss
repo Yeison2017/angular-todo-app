@@ -111,6 +111,10 @@
   }
 }
 
-.todo-controls-box .todo-control-button.is-danger:active i.material-icons {
+.todo-controls-box .todo-control-button.is-danger:hover i.material-icons {
   color: rgb(155, 27, 27);
+}
+
+.todo-controls-box .todo-control-button.is-danger:active i.material-icons {
+  color: rgb(189, 37, 37);
 }
