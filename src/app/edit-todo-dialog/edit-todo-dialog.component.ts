@@ -13,9 +13,17 @@ export class EditTodoDialogComponent {
     public dialogRef: MatDialogRef<EditTodoDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public todo: Todo
   ) {}
-  onFormSubmit(form: NgForm) {}
 
   close() {
     this.dialogRef.close();
+  }
+
+  onFormSubmit(form: NgForm) {
+    if (form.invalid) return;
+    const updatedTodo = {
+      ...this.todo,
+      ...form.value,
+    };
+    this.dialogRef.close(updatedTodo);
   }
 }
