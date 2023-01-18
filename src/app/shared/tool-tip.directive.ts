@@ -1,17 +1,40 @@
-import { AfterViewInit, Directive, ElementRef, Input } from '@angular/core';
+import {
+  AfterViewInit,
+  Directive,
+  ElementRef,
+  Input,
+  OnChanges,
+  SimpleChanges,
+} from '@angular/core';
 import tippy from 'tippy.js';
 
 @Directive({
   selector: '[appToolTip]',
 })
-export class ToolTipDirective implements AfterViewInit {
-  @Input('appToolTip') tooltipContect!: string;
+export class ToolTipDirective implements AfterViewInit, OnChanges {
+  @Input('appToolTip') tooltipContent!: string;
+
+  tippyInstance: any;
 
   constructor(private elRef: ElementRef) {}
 
-  ngAfterViewInit(): void {
-    tippy(this.elRef.nativeElement, {
-      content: this.tooltipContect,
+  ngAfterViewInit() {
+    this.tippyInstance = tippy(this.elRef.nativeElement, {
+      content: this.tooltipContent,
     });
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['tooltipContent']) {
+      console.log('testing');
+
+      this.updateToolTipContent();
+    }
+  }
+
+  updateToolTipContent() {
+    if (this.tippyInstance) {
+      this.tippyInstance.setContent(this.tooltipContent);
+    }
   }
 }
