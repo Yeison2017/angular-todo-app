@@ -38,6 +38,7 @@ export class TodosComponent implements OnInit {
 
   toggleCompleted(todo: Todo) {
     todo.completed = !todo.completed;
+    this.saveLocalStorage();
   }
 
   editTodo(todo: Todo) {
@@ -58,5 +59,9 @@ export class TodosComponent implements OnInit {
   deleteTodo(todo: Todo) {
     const index = this.todos.indexOf(todo);
     this.dataService.deleteTodo(index);
+  }
+
+  saveLocalStorage() {
+    localStorage.setItem('todos', JSON.stringify(this.todos));
   }
 }
