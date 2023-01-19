@@ -14,10 +14,13 @@ import { Todo } from '../shared/todo.model';
 export class TodosComponent implements OnInit {
   todos: Todo[];
   showValidationErrors: boolean;
+  primaryColor: string = '#348756';
+  secondaryColor: string = '#54b6ca';
 
   constructor(private dataService: DataService, private dialog: MatDialog) {
     this.todos = [];
     this.showValidationErrors = false;
+    this.saveColors();
   }
 
   ngOnInit(): void {
@@ -63,5 +66,22 @@ export class TodosComponent implements OnInit {
 
   saveLocalStorage() {
     localStorage.setItem('todos', JSON.stringify(this.todos));
+  }
+
+  saveColors() {
+    this.primaryColor =
+      localStorage.getItem('primaryColor') || this.primaryColor;
+    this.secondaryColor =
+      localStorage.getItem('secondaryColor') || this.secondaryColor;
+  }
+
+  changePrimaryColor(color: string) {
+    this.primaryColor = color;
+    localStorage.setItem('primaryColor', color);
+  }
+
+  changeSecondaryColor(color: string) {
+    this.secondaryColor = color;
+    localStorage.setItem('secondaryColor', color);
   }
 }

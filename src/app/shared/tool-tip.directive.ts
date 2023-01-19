@@ -26,8 +26,6 @@ export class ToolTipDirective implements AfterViewInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['tooltipContent']) {
-      console.log('testing');
-
       this.updateToolTipContent();
     }
   }
