@@ -28,7 +28,7 @@ export class TodosComponent implements OnInit {
   constructor(private dataService: DataService, private dialog: MatDialog) {
     this.todos = [];
     this.showValidationErrors = false;
-    this.saveColors();
+    this.getColors();
   }
 
   ngOnInit(): void {
@@ -76,7 +76,7 @@ export class TodosComponent implements OnInit {
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }
 
-  saveColors() {
+  getColors() {
     this.primaryColor =
       localStorage.getItem('primaryColor') || this.primaryColor;
     this.secondaryColor =
@@ -95,5 +95,10 @@ export class TodosComponent implements OnInit {
 
   openChangeStyle() {
     this.changeStyle = !this.changeStyle;
+
+    if (!this.changeStyle) {
+      this.changePrimaryColor(this.primaryColor);
+      this.changeSecondaryColor(this.secondaryColor);
+    }
   }
 }
