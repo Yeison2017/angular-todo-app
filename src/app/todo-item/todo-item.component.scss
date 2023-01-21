@@ -64,12 +64,21 @@
   transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
 }
 
-.todo-item:hover .todo-controls-box {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.4s;
+@media screen and (min-width: 420px) {
+  .todo-item:hover .todo-controls-box {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.4s;
 
-  transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .todo-item .todo-controls-box {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .todo-controls-box .todo-control-button {
