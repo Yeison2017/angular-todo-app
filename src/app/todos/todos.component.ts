@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { ColorPickerControl } from '@iplab/ngx-color-picker';
 import { EditTodoDialogComponent } from '../edit-todo-dialog/edit-todo-dialog.component';
 
 import { DataService } from '../shared/data.service';
@@ -16,6 +17,13 @@ export class TodosComponent implements OnInit {
   showValidationErrors: boolean;
   primaryColor: string = '#348756';
   secondaryColor: string = '#54b6ca';
+  githubControlPrimary = new ColorPickerControl().setValueFrom(
+    this.primaryColor
+  );
+  githubControlSecondary = new ColorPickerControl().setValueFrom(
+    this.secondaryColor
+  );
+  changeStyle: boolean = false;
 
   constructor(private dataService: DataService, private dialog: MatDialog) {
     this.todos = [];
@@ -83,5 +91,9 @@ export class TodosComponent implements OnInit {
   changeSecondaryColor(color: string) {
     this.secondaryColor = color;
     localStorage.setItem('secondaryColor', color);
+  }
+
+  openChangeStyle() {
+    this.changeStyle = !this.changeStyle;
   }
 }

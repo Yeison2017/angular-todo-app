@@ -64,3 +64,33 @@
     </div>
   </div>
 </section>
+
+<div class="containerColorPicker" *ngIf="changeStyle">
+  <div class="colorPicker">
+    <github-picker
+      [control]="githubControlPrimary"
+      [(color)]="primaryColor"
+      [columns]="4"
+    ></github-picker>
+
+    <github-picker
+      [control]="githubControlSecondary"
+      [(color)]="secondaryColor"
+      [columns]="4"
+    ></github-picker>
+  </div>
+</div>
+
+<div
+  class="btnColorPiker"
+  (click)="openChangeStyle()"
+  [ngStyle]="{
+    background:
+      'linear-gradient(to right, ' + primaryColor + ', ' + secondaryColor + ')',
+    right: changeStyle ? '50%' : '15px',
+    transform: changeStyle ? 'none' : 'translate(-50%, -50%)',
+    margin: changeStyle ? '20px -25px' : '0px'
+  }"
+>
+  <i class="material-icons">{{ changeStyle ? "done" : "style" }}</i>
+</div>
