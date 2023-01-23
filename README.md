@@ -1,4 +1,4 @@
-## ![icono de Angular](https://ibb.co/hdRy2bM) Todo App
+## ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) Todo App
 
 Este proyecto es una página web creada con Angular, que permite registrar, editar y eliminar tareas. Además, está diseñada de manera responsiva y está en inglés. Para los estilos se utilizó el Framework Bulma, Sass y Angular Material UI.
 
@@ -14,13 +14,13 @@ El proyecto fue creado a partir de un video tutorial de YouTube del canal [Devst
 
 Video:
 
-- ![icono de Angular](https://ibb.co/hdRy2bM) Angular
-- ![icono de Angular](https://ibb.co/hdRy2bM) JavaScripts
-- ![icono de Angular](https://ibb.co/hdRy2bM) No se almacenan los datos
+- ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) Angular
+- ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) JavaScripts
+- ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) No se almacenan los datos
 
 Todo App:
 
-- ![icono de Angular](https://ibb.co/hdRy2bM) Angular
-- ![icono de Angular](https://ibb.co/hdRy2bM) TypeScript
-- ![icono de Angular](https://ibb.co/hdRy2bM) LocalStorage
-- ![icono de Angular](https://ibb.co/hdRy2bM) Se puede cambiar el estilo de los colores primarios
+- ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) Angular
+- ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) TypeScript
+- ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) LocalStorage
+- ![icono de Angular](https://i.ibb.co/bvgPNT3/Angular.png) Se puede cambiar el estilo de los colores primarios
