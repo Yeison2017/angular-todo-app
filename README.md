@@ -15,7 +15,7 @@ El proyecto fue creado a partir de un video tutorial de YouTube del canal [Devst
 Video:
 
 - ![icono de Angular](https://i.ibb.co/yXPYj5b/Angular.png) Angular
-- ![icono de Angular](https://i.ibb.co/yXPYj5b/Angular.png) JavaScripts
+- ![icono de Angular](https://i.ibb.co/znJW6yq/Java-Script.png) JavaScripts
 - ![icono de Angular](https://i.ibb.co/yXPYj5b/Angular.png) No se almacenan los datos
 
 Todo App:
