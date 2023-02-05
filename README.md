@@ -1,6 +1,11 @@
-## ![icono de Angular](https://i.ibb.co/yXPYj5b/Angular.png) Todo App
+## Todo App
 
 Este proyecto es una página web creada con Angular, que permite registrar, editar y eliminar tareas. Además, está diseñada de manera responsiva y está en inglés. Para los estilos se utilizó el Framework Bulma, Sass y Angular Material UI.
+
+## Tecnologías principales
+
+![icono de Angular](https://i.ibb.co/yXPYj5b/Angular.png) Angular
+![icono de Angular](./src/assets/Angular.png) Angular
 
 ## Capturas de pantalla
 
