@@ -4,8 +4,8 @@ Este proyecto es una página web creada con Angular, que permite registrar, edit
 
 ## Tecnologías principales
 
-![icono de Angular](https://i.ibb.co/yXPYj5b/Angular.png) Angular
 ![icono de Angular](./src/assets/Angular.png) Angular
+![icono de Angular](./src/assets/Angular2.png) Angular2
 
 ## Capturas de pantalla
 
