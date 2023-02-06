@@ -4,7 +4,7 @@ Este proyecto es una página web creada con Angular, que permite registrar, edit
 
 ## Tecnologías principales
 
-![icono de Angular](./src/assets/Angular.png) Angular
+![icono de Angular](./src/assets/Angular.png) Angular  
 ![icono de Angular](./src/assets/LocalStorage.png) LocalStorage
 
 ## Capturas de pantalla
