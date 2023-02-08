@@ -5,9 +5,9 @@ Este proyecto es una página web creada con Angular, que permite registrar, edit
 ## Tecnologías principales
 
 ![icono de Angular](https://i.ibb.co/yXPYj5b/Angular.png) Angular  
-![icono de LocalStorage](https://i.ibb.co/RT5JXmD/Local-Storage.png) LocalStorage
-![icono de Bulma](https://i.ibb.co/m6CfSPQ/Bulma.png) Bulma
-![icono de Sass](https://i.ibb.co/RhsGQCH/Sass.png) Sass
+![icono de LocalStorage](https://i.ibb.co/RT5JXmD/Local-Storage.png) LocalStorage  
+![icono de Bulma](https://i.ibb.co/m6CfSPQ/Bulma.png) Bulma  
+![icono de Sass](https://i.ibb.co/RhsGQCH/Sass.png) Sass  
 ![icono de Angular Material UI](https://i.ibb.co/YkXS1K3/Angular-Material-UI.png) Angular Material UI
 
 ## Capturas de pantalla
